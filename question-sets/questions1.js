@@ -18,36 +18,35 @@
 
 // questions for rounds
 var questions_rounds = [
-    'Nimeta Eesti seksikaim mees',
-    'Mis koolis käisid enne ülikooli?',
-    'Kui ma ei oleks mat-inf, siis ma oleks...'
+    'Nimeta ühikahoone Tartus',
+    'Nimeta programmeerimiskeel',
+    'Nimeta planeet'
 ];
 
 // answers to the questions for rounds
 // format: dimension 1 = round, dimension 2 = question, dimension 3 = [answer, points]
 var answers_rounds = [
     [
-        ['Erki Nool', 15],
-        ['Uku Suviste', 11],
-        ['Eno Tõnisson', 6],
-        ['Rasmus Mägi', 6],
-        ['Kaido Lätt', 5], 
-        ['Marco Tasane', 5]
+        ['Narva mnt 89 e Mordor', 28],
+        ['Tiigi 14', 21],
+        ['Raatuse 22', 19],
+        ['Narva mnt 27', 12],
+        ['Pepleri 14', 11], 
+        ['Narva mnt 25', 6]
     ],[
-        ['Hugo Treffneri Gümnaasium', 16],
-        ['Miina Härma Gümnaasium', 9],
-        ['Tallinna Reaalkool', 7],
-        ['Gustav Adolfi Gümnaasium', 6],
-        ['Nõo Reaalgümnaasium', 6],
-        ['Jaan Poska Gümnaasium', 5],
+        ['Java', 51],
+        ['Python', 26],
+        ['C++', 12],
+        ['C#', 4],
+        ['HTML', 3],
+        ['R', 3]
     ],[
-        ['kodutu / töötu / ei keegi', 13],
-        ['arst', 12],
-        ['majandus', 10],
-        ['FKM', 7],
-        ['bioloog', 4],
-        ['kokk', 3],
-        
+        ['Maa', 39],
+        ['Marss', 21],
+        ['Pluuto', 17],
+        ['Jupiter', 12],
+        ['Uraan', 6],
+        ['Saturn,', 4]
     ]
 ];
 

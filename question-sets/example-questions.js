@@ -18,36 +18,32 @@
 
 // questions for rounds
 var questions_rounds = [
-    'Nimeta Eesti seksikaim mees',
-    'Mis koolis käisid enne ülikooli?',
-    'Kui ma ei oleks mat-inf, siis ma oleks...'
+    'Name something that one can have for breakfast',
+    'Name an animal species that is kept as a pet',
+    'Name something that sticks to a wall'
 ];
 
 // answers to the questions for rounds
 // format: dimension 1 = round, dimension 2 = question, dimension 3 = [answer, points]
 var answers_rounds = [
     [
-        ['Erki Nool', 15],
-        ['Uku Suviste', 11],
-        ['Eno Tõnisson', 6],
-        ['Rasmus Mägi', 6],
-        ['Kaido Lätt', 5], 
-        ['Marco Tasane', 5]
+        ['Cereals', 49],
+        ['Coffee', 22],
+        ['Bread', 15],
+        ['Tea', 7],
+        ['Hot chocolate', 4], 
+        ['Fresh fruits', 3]
     ],[
-        ['Hugo Treffneri Gümnaasium', 16],
-        ['Miina Härma Gümnaasium', 9],
-        ['Tallinna Reaalkool', 7],
-        ['Gustav Adolfi Gümnaasium', 6],
-        ['Nõo Reaalgümnaasium', 6],
-        ['Jaan Poska Gümnaasium', 5],
+        ['Dog', 50],
+        ['Cat', 36],
+        ['Gold Fish', 7],
+        ['Parrot', 4],
+        ['Guinea pig', 3]
     ],[
-        ['kodutu / töötu / ei keegi', 13],
-        ['arst', 12],
-        ['majandus', 10],
-        ['FKM', 7],
-        ['bioloog', 4],
-        ['kokk', 3],
-        
+        ['Poster', 34],
+        ['Sticker', 29],
+        ['Bubble gum', 19],
+        ['Hot glue', 10]
     ]
 ];
 

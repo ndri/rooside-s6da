@@ -18,36 +18,35 @@
 
 // questions for rounds
 var questions_rounds = [
-    'Nimeta Eesti seksikaim mees',
-    'Mis koolis käisid enne ülikooli?',
-    'Kui ma ei oleks mat-inf, siis ma oleks...'
+    'Nimeta Tartu kohvik',
+    'Nimeta Tartu linnaosa',
+    'Nimeta elund'
 ];
 
 // answers to the questions for rounds
 // format: dimension 1 = round, dimension 2 = question, dimension 3 = [answer, points]
 var answers_rounds = [
     [
-        ['Erki Nool', 15],
-        ['Uku Suviste', 11],
-        ['Eno Tõnisson', 6],
-        ['Rasmus Mägi', 6],
-        ['Kaido Lätt', 5], 
-        ['Marco Tasane', 5]
+        ['Werner', 45],
+        ['Säde', 15],
+        ['Krempel', 12],
+        ['Gustav', 5],
+        ['Mandel', 3],
+        ['Suudlevad tudengid', 3]
     ],[
-        ['Hugo Treffneri Gümnaasium', 16],
-        ['Miina Härma Gümnaasium', 9],
-        ['Tallinna Reaalkool', 7],
-        ['Gustav Adolfi Gümnaasium', 6],
-        ['Nõo Reaalgümnaasium', 6],
-        ['Jaan Poska Gümnaasium', 5],
+        ['Annelinn', 39],
+        ['Karlova', 28],
+        ['Supilinn', 10],
+        ['Ülejõe', 6],
+        ['Ihaste', 5],
+        ['Kesklinn', 5]
     ],[
-        ['kodutu / töötu / ei keegi', 13],
-        ['arst', 12],
-        ['majandus', 10],
-        ['FKM', 7],
-        ['bioloog', 4],
-        ['kokk', 3],
-        
+        ['Süda', 49],
+        ['Maks', 22],
+        ['Nahk', 8],
+        ['Neerud', 6],
+        ['Magu', 5],
+        ['Aju', 4],
     ]
 ];
 

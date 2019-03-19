@@ -18,113 +18,211 @@
  */
 
 #container {
-	/* fills the visible space of the window */
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	
-	/* for centering of contents */
-	display: table;
-	
-	/* general style */
-	background-color: black;
-	color: white;
-	font-family: sans-serif;
+    /* fills the visible space of the window */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* for centering of contents */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* general style */
+    background-color: gray;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 .screen {
-	/* for vertical centering */
-	display: table-cell;
-	vertical-align: middle;
+    /* for vertical centering */
+    display: flex;
+    flex-direction: column;
 
-	/* for horizontal centering */
-	text-align: center;
+    /* for horizontal centering */
+    text-align: center;
 }
 
 table {
-	/* for horizontal centering */
-	margin: 0 auto;
-	width: 800px;
+    /* for horizontal centering */
+    margin: 0 auto;
+    width: 800px;
 }
 
-.answerstable tr td {
-	vertical-align: bottom;
-	border-bottom: 0.5em solid black;
+.answerstable {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.2rem;
+    padding: 0.2rem;
 }
+.answerstable .flip-card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+.answerstable .flip-card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+.answerstable .flip-card:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+}
+.answerstable .flip-card:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1;
+}
+.answerstable .flip-card:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+}
+.answerstable .flip-card:nth-child(6) {
+    grid-column: 2;
+    grid-row: 3;
+}
+/*.answerstable tr {
+    background-color: #B28900;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+}
+.answerstable tr td {
+    vertical-align: bottom;
+}*/
 
 .answer_priority, .answer_points {
-	text-align: right;
-	width: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .answer_priority {
-	padding-right: 0.5em;
+    /*display: none;*/
 }
 
 #view_finals .answer_points {
-	padding-right: 0.5em;
-	width: 5%;
 }
 
 #view_finals .answer {
-	width: 40%;
 }
 
 .answer {
-	text-align: left;
-	width: auto;
-	padding: 0.2em 0.5em;
-	background-color: #333333;
+    text-align: left;
+    width: auto;
+    padding: 1em 1em;
+    font-weight: 700;
+    background-color: black;
 }
 
 /* for rollin effect */
 .answer_span {
-	display: block; 
-	overflow: hidden;
-	height: 20px;
+    display: block; 
+    overflow: hidden;
+    height: 20px;
+}
+
+.answer_points {
+    background-color: #D22F01;
+    font-weight: 700;
 }
 
 .sumlabel {
-	text-align: right;
+    text-align: right;
 }
 
 .pointstable {
-	margin-top: 1em;
-	border-spacing: 0;
+    margin-top: 1em;
+    border-spacing: 0;
 }
 
 .points_row {
-	background-color: #aaaaaa;
-	color: black;
+    background-color: #aaaaaa;
+    color: black;
 }
 
 .pointstable tr td {
-	padding: 0.2em 0.5em;
-	font-weight: bold;
+    padding: 0.2em 0.5em;
+    font-weight: bold;
 }
 
 .points_left {
-	text-align: left;
-	min-width: 5em;
+    text-align: left;
+    min-width: 5em;
 }
 
 .points_center {
-	text-align: center;
-	width: 5em;
+    text-align: center;
+    width: 5em;
 }
 
 .points_right {
-	text-align: right;
-	min-width: 5em;
+    text-align: right;
+    min-width: 5em;
 }
 
 .maxwidth {
-	width: 100%;
+    width: 100%;
 }
 
-.invisible {
-	visibility: hidden;
+/*.invisible {
+    visibility: hidden;
+}*/
+
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    height: 3.6rem;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card.revealed .flip-card-inner {
+    transform: rotateX(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    transform: rotateX(180deg);
+    background-color: #D5A302;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+.flip-card-front {
+    background-color: #D5A302;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.flip-card-front .answer_ring {
+    background-color: #D22F01;
+    width: 4.2rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.flip-card-front .answer_ring .answer_priority {
+    text-shadow: 0 0 4px black;
 }
 
+.invisible .flip-card-front {
+    color: transparent;
+}

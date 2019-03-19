@@ -18,36 +18,33 @@
 
 // questions for rounds
 var questions_rounds = [
-    'Nimeta Eesti seksikaim mees',
-    'Mis koolis käisid enne ülikooli?',
-    'Kui ma ei oleks mat-inf, siis ma oleks...'
+    'Kõige raskem aine',
+    'Nimeta meeste soeng',
+    'Nimeta Eesti räppar'
 ];
 
 // answers to the questions for rounds
 // format: dimension 1 = round, dimension 2 = question, dimension 3 = [answer, points]
 var answers_rounds = [
     [
-        ['Erki Nool', 15],
-        ['Uku Suviste', 11],
-        ['Eno Tõnisson', 6],
-        ['Rasmus Mägi', 6],
-        ['Kaido Lätt', 5], 
-        ['Marco Tasane', 5]
+        ['Matemaatiline analüüs III', 15],
+        ['Diskreetne matemaatika I', 14],
+        ['Programmeerimisharjutused', 13],
+        ['Algebra I', 12],
+        ['Matemaatiline maailmapilt', 10], 
+        ['Kõrgem matemaatika I', 9]
     ],[
-        ['Hugo Treffneri Gümnaasium', 16],
-        ['Miina Härma Gümnaasium', 9],
-        ['Tallinna Reaalkool', 7],
-        ['Gustav Adolfi Gümnaasium', 6],
-        ['Nõo Reaalgümnaasium', 6],
-        ['Jaan Poska Gümnaasium', 5],
+        ['Mullet', 18],
+        ['Kiilakas', 17],
+        ['Potisoeng', 13],
+        ['Siil', 11],
+        ['Man bun', 8],
+        ['Mohawk', 7]
     ],[
-        ['kodutu / töötu / ei keegi', 13],
-        ['arst', 12],
-        ['majandus', 10],
-        ['FKM', 7],
-        ['bioloog', 4],
-        ['kokk', 3],
-        
+        ['Nublu', 44],
+        ['Genka', 14],
+        ['Reket', 10],
+        ['Arop', 9]
     ]
 ];
 

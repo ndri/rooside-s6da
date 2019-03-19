@@ -18,36 +18,33 @@
 
 // questions for rounds
 var questions_rounds = [
-    'Nimeta Eesti seksikaim mees',
-    'Mis koolis käisid enne ülikooli?',
-    'Kui ma ei oleks mat-inf, siis ma oleks...'
+    'Nimeta kook',
+    'Kirjelda üliõpilast ühe sõnaga',
+    'Nimeta tööots, millega kooli kõrvalt teenida'
 ];
 
 // answers to the questions for rounds
 // format: dimension 1 = round, dimension 2 = question, dimension 3 = [answer, points]
 var answers_rounds = [
     [
-        ['Erki Nool', 15],
-        ['Uku Suviste', 11],
-        ['Eno Tõnisson', 6],
-        ['Rasmus Mägi', 6],
-        ['Kaido Lätt', 5], 
-        ['Marco Tasane', 5]
+        ['Napoleoni', 34],
+        ['Brita', 8],
+        ['Juustukook', 7],
+        ['Pannkook', 6],
+        ['Pavlola', 5], 
+        ['Brownie', 5]
     ],[
-        ['Hugo Treffneri Gümnaasium', 16],
-        ['Miina Härma Gümnaasium', 9],
-        ['Tallinna Reaalkool', 7],
-        ['Gustav Adolfi Gümnaasium', 6],
-        ['Nõo Reaalgümnaasium', 6],
-        ['Jaan Poska Gümnaasium', 5],
+        ['Laisk', 18],
+        ['Väsinud / magamata', 17],
+        ['Tark / nutikas / leidlik', 8],
+        ['Joodik / purjus', 6],
+        ['Stressis / koormatud', 5]
     ],[
-        ['kodutu / töötu / ei keegi', 13],
-        ['arst', 12],
-        ['majandus', 10],
-        ['FKM', 7],
-        ['bioloog', 4],
-        ['kokk', 3],
-        
+        ['Klienditeenindaja', 35],
+        ['Prostitutsioon / strippamine', 12],
+        ['Transport', 10],
+        ['Arendamine', 9],
+        ['Õpetamine', 5],
     ]
 ];
 
