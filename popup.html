@@ -22,6 +22,7 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
 <title>Rooside Sõda</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="style/popup.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
 <script src="lib/jquery-1.6.1.js"></script>
 <script src="questions.js"></script>
@@ -268,9 +269,19 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
 
 <!-- round 1 to 4 -->
 <div class="screen" id="view_rounds">
-    <h1>Round <span id="round_display"></span> <span id="multiplicator_display"></span></h1>
+    <h1><span id="round_display"></span>. voor <span id="multiplicator_display"></span></h1>
     <div class="answerstable" id="tbl_rounds_answers">
         <!-- placeholder for answers, filled using JS -->
+    </div>
+
+    <div class="pointztable">
+        <div class="mistake" id="x_t0_0">X</div>
+        <div class="mistake" id="x_t0_1">X</div>
+        <div class="mistake" id="x_t0_2"></div>
+        <div class="buffer"></div>
+        <div class="mistake" id="x_t1_2"></div>
+        <div class="mistake" id="x_t1_1"></div>
+        <div class="mistake" id="x_t1_0">X</div>
     </div>
     
     <table class="pointstable">
@@ -284,7 +295,7 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
             <td id="round_points" class="points_center"></td>
             <td id="team1_points" class="points_right"></td>
         </tr>
-        <tr>
+        <!--<tr>
             <td class="points_left">
                 <span id="x_t0_0">&nbsp;</span>
                 <span id="x_t0_1">&nbsp;</span>
@@ -296,7 +307,7 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
                 <span id="x_t1_1">&nbsp;</span>
                 <span id="x_t1_0">&nbsp;</span>
             </td>
-        </tr>
+        </tr>-->
     </table>
 </div>
 

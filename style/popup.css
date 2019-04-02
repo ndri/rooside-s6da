@@ -33,7 +33,7 @@
     /* general style */
     background-color: gray;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .screen {
@@ -57,6 +57,8 @@ table {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.2rem;
     padding: 0.2rem;
+    border: 0.2rem solid black;
+    border-bottom: none;
 }
 .answerstable .flip-card:nth-child(1) {
     grid-column: 1;
@@ -112,9 +114,11 @@ table {
 .answer {
     text-align: left;
     width: auto;
-    padding: 1em 1em;
     font-weight: 700;
+    padding: 0 1rem;
     background-color: black;
+    display: flex;
+    align-items: center;
 }
 
 /* for rollin effect */
@@ -127,6 +131,7 @@ table {
 .answer_points {
     background-color: #D22F01;
     font-weight: 700;
+    font-size: 1.6rem;
 }
 
 .sumlabel {
@@ -202,6 +207,9 @@ table {
     padding: 0.2rem;
     box-sizing: border-box;
 }
+.flip-card-back .answer {
+
+}
 .flip-card-front {
     background-color: #D5A302;
     display: flex;
@@ -220,9 +228,29 @@ table {
     font-weight: 700;
 }
 .flip-card-front .answer_ring .answer_priority {
-    text-shadow: 0 0 4px black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .invisible .flip-card-front {
     color: transparent;
+}
+
+
+.pointztable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    border: 0.2rem solid black;
+    border-top: none;
+    padding: 0.2rem;
+    grid-gap: 0.2rem;
+    background-color: black;
+}
+.mistake {
+    background-color: #D5A302;
+    color: #D22F01;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.buffer {
+    background-color: #D5A302;
 }
