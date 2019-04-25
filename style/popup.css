@@ -24,14 +24,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    
+
     /* for centering of contents */
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     /* general style */
     background-color: gray;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../gfx/taust.jpg");*/
+    background-image: url("../gfx/taust-logoga.jpg");
+    background-size: cover;
+    background-position: center;
     color: white;
     font-family: "Open Sans", sans-serif;
 }
@@ -43,6 +47,14 @@
 
     /* for horizontal centering */
     text-align: center;
+}
+
+#view_splash {
+    background-image: url("../gfx/roosid.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
 
 table {
@@ -60,30 +72,37 @@ table {
     border: 0.2rem solid black;
     border-bottom: none;
 }
+
 .answerstable .flip-card:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
 }
+
 .answerstable .flip-card:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
 }
+
 .answerstable .flip-card:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
 }
+
 .answerstable .flip-card:nth-child(4) {
     grid-column: 2;
     grid-row: 1;
 }
+
 .answerstable .flip-card:nth-child(5) {
     grid-column: 2;
     grid-row: 2;
 }
+
 .answerstable .flip-card:nth-child(6) {
     grid-column: 2;
     grid-row: 3;
 }
+
 /*.answerstable tr {
     background-color: #B28900;
     display: grid;
@@ -123,7 +142,7 @@ table {
 
 /* for rollin effect */
 .answer_span {
-    display: block; 
+    display: block;
     overflow: hidden;
     height: 20px;
 }
@@ -182,6 +201,7 @@ table {
     perspective: 1000px;
     height: 3.6rem;
 }
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -190,15 +210,18 @@ table {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
+
 .flip-card.revealed .flip-card-inner {
     transform: rotateX(180deg);
 }
+
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
+
 .flip-card-back {
     transform: rotateX(180deg);
     background-color: #D5A302;
@@ -207,9 +230,11 @@ table {
     padding: 0.2rem;
     box-sizing: border-box;
 }
+
 .flip-card-back .answer {
 
 }
+
 .flip-card-front {
     background-color: #D5A302;
     display: flex;
@@ -217,6 +242,7 @@ table {
     justify-content: center;
     font-size: 2rem;
 }
+
 .flip-card-front .answer_ring {
     background-color: #D22F01;
     width: 4.2rem;
@@ -227,6 +253,7 @@ table {
     justify-content: center;
     font-weight: 700;
 }
+
 .flip-card-front .answer_ring .answer_priority {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -245,12 +272,52 @@ table {
     grid-gap: 0.2rem;
     background-color: black;
 }
+
 .mistake {
     background-color: #D5A302;
     color: #D22F01;
     font-size: 2.4rem;
     font-weight: 700;
 }
+
 .buffer {
     background-color: #D5A302;
+}
+
+
+#view_rounds h1, #view_rounds #name_t0,
+#view_rounds #name_t1, #view_rounds .points_center {
+    display: none;
+}
+
+#round_points {
+    color: #D5A302;
+    background-color: black;
+    padding: 0 0.5rem;
+    font-size: 4rem;
+    width: 20%;
+    margin: auto;
+    /*font-family: 'VT323', monospace;*/
+    font-weight: 700;
+}
+
+.team_points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+#team0_points, #team1_points {
+    background-color: black;
+    width: 20%;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+#team0_points {
+    justify-self: start;
+}
+
+#team1_points {
+    justify-self: end;
 }

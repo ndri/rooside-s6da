@@ -23,6 +23,8 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="style/popup.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
 
 <script src="lib/jquery-1.6.1.js"></script>
 <script src="questions.js"></script>
@@ -264,12 +266,14 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
 
 <!-- splash -->
 <div class="screen" id="view_splash">
-    <img src="gfx/cover.jpg" />
+    <!--<img src="gfx/roosid.png" />-->
 </div>
 
 <!-- round 1 to 4 -->
 <div class="screen" id="view_rounds">
     <h1><span id="round_display"></span>. voor <span id="multiplicator_display"></span></h1>
+
+    <div id="round_points"></div>
     <div class="answerstable" id="tbl_rounds_answers">
         <!-- placeholder for answers, filled using JS -->
     </div>
@@ -283,9 +287,15 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
         <div class="mistake" id="x_t1_1"></div>
         <div class="mistake" id="x_t1_0">X</div>
     </div>
-    
+
+    <div class="team_points">
+        <div id="team0_points"></div>
+        <div id="team1_points"></div>
+    </div>
+
+
     <table class="pointstable">
-        <tr>
+        <!--<tr>
             <td id="name_t0" class="points_left"></td>
             <td class="points_center"></td>
             <td id="name_t1" class="points_right"></td>
@@ -294,7 +304,7 @@ along with Clan Contest.  If not, see http://www.gnu.org/licenses/.
             <td id="team0_points" class="points_left"></td>
             <td id="round_points" class="points_center"></td>
             <td id="team1_points" class="points_right"></td>
-        </tr>
+        </tr>-->
         <!--<tr>
             <td class="points_left">
                 <span id="x_t0_0">&nbsp;</span>
